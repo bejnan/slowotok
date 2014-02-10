@@ -19,4 +19,4 @@ makeWordListGen (x:xs) a acc = makeWordListGen xs (x:a) acc
 
 prepareAnswer [] [] = []
 
-printAnswer s = return (concatMap(\a -> (a++"\n")) s)
+printAnswer s = return (concatMap(\a -> ('\n':a)) s)
